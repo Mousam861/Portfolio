@@ -1,0 +1,130 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    min-height: 100vh;
+    width: 100%;
+}
+#page6 {
+    height: 100vh;
+    width: 100%;
+    background-color: #222831;
+    color: white;
+    padding: 7vh;
+}
+.p3heading{
+    text-align: center;
+    font-size: 4vh;
+}
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contactlogo {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 13vh;
+}
+
+.circlelogo {
+    height: 10vh;
+    width: 10vh;
+    border-radius: 50%;
+    background-color: #1D222A;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    transition: ease 1s;
+}
+
+.circlelogo i {
+    font-size: 4vh;
+    color: white;
+}
+.circlelogo a{
+    text-decoration: none;
+}
+.circlelogo:hover{
+    background-color: #4cae4c;
+}
+.contactl {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14vh;
+}
+.conadd {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 3vh;
+    width: 100%;
+}
+.conadd a{
+    text-decoration: none;
+    color: white;
+}
+.conadd h4 {
+    font-size: 3vh;
+}
+
+.contactr {
+    width: 50%;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2vh;
+    margin-top: 4vh;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: calc(50% - 10px);
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    background-color: #1D222A;
+    color: #fff;
+    border-radius: 10vh;
+}
+
+button {
+    background-color: #5cb85c;
+    color: #fff;
+    border: none;
+    padding: 2vh 2vh;
+    text-align: center;
+    font-size: 2vh;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 3vh;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}

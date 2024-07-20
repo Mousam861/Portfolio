@@ -1,0 +1,100 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    min-height: 100vh;
+    width: 100%;
+}
+
+#page3 {
+    height: 100vh;
+    width: 100%;
+    background-color: #222831;
+    color: white;
+    padding: 7vh;
+}
+
+.p3heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.p3heading h2 {
+    font-size: 6vh;
+}
+
+.p3heading h6 {
+    padding-top: 2vh;
+    font-size: 2.5vh;
+    padding-bottom: vh;
+}
+
+.p3heading h6 d,
+.swiper-slide h4 d {
+    color: #29A587;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 10vh;
+}
+
+.swiper-slide h4 {
+    font-size: 3vh;
+    padding: 3vh 0vh;
+}
+
+.swiper-slide p {
+    font-size: 2vh;
+    padding: 2vh 0vh;
+}
+
+.swiper-slide button {
+    font-size: 2vh;
+    border-radius: 3vh;
+    padding: 1vh 1vh;
+    text-align: center;
+}
+
+.portimg {
+    padding: 4vh;
+    height: 35vh;
+    width: 70vh;
+    overflow: hidden;
+}
+
+.portimg img {
+    border-radius: 5vh;
+    height: 100%;
+    width: 100%;
+    transition: all ease 0.5s;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.portimg img:hover {
+    scale: 1.1;
+    overflow: hidden;
+}
