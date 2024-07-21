@@ -68,6 +68,28 @@ function swiper(){
 }
 swiper()
 
+function loader() {
+  var tl = gsap.timeline()
+  tl.from(".loader h3", {
+    x: 70,
+    duration: 1,
+    stagger: 0.2
+  })
+  tl.to(".loader h3", {
+    x: "-70",
+    duration: 1,
+    stagger: 0.2,
+    opacity: 0
+  })
+  tl.to(".loader", {
+    opacity: 0
+  })
+  tl.to(".loader", {
+    display: "none"
+  })
+}
+loader();
+
 var nav = document.querySelector("#page1 .nav")
 var tl = gsap.timeline()
 tl.from(nav,{
