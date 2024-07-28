@@ -37,36 +37,39 @@ Locomo()
 
 Shery.mouseFollower();
 Shery.makeMagnet(".magnet");
+Shery.hoverWithMediaCircle(".hvr2",{
+  images:["Images/mern.jpg","Images/ui.jpg","Images/python.jpg"]
+});
 
-function swiper(){
-  var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    centeredSlides: false,
-    slidesPerGroupSkip: 1,
-    grabCursor: true,
-    keyboard: {
-      enabled: true,
-    },
-    breakpoints: {
-      769: {
-        slidesPerView: 2,
-        slidesPerGroup: 2,
-      },
-    },
-    scrollbar: {
-      el: ".swiper-scrollbar",
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-  });
-}
-swiper()
+// function swiper(){
+//   var swiper = new Swiper(".mySwiper", {
+//     slidesPerView: 1,
+//     centeredSlides: false,
+//     slidesPerGroupSkip: 1,
+//     grabCursor: true,
+//     keyboard: {
+//       enabled: true,
+//     },
+//     breakpoints: {
+//       769: {
+//         slidesPerView: 2,
+//         slidesPerGroup: 2,
+//       },
+//     },
+//     scrollbar: {
+//       el: ".swiper-scrollbar",
+//     },
+//     navigation: {
+//       nextEl: ".swiper-button-next",
+//       prevEl: ".swiper-button-prev",
+//     },
+//     pagination: {
+//       el: ".swiper-pagination",
+//       clickable: true,
+//     },
+//   });
+// }
+// swiper()
 
 function loader() {
   var tl = gsap.timeline()

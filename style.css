@@ -54,6 +54,9 @@ body {
     justify-content: center;
     gap: 4vh;
 }
+.nav a:last-child{
+    text-decoration: none;
+}
 
 .nav h3 {
     font-size: 2vh;
@@ -206,7 +209,7 @@ body {
     width: 100%;
     background-color: #222831;
     color: white;
-    padding: 7vh;
+    padding: 1.5vh;
 }
 
 .p3heading {
@@ -224,47 +227,44 @@ body {
 .p3heading h6 {
     padding-top: 2vh;
     font-size: 2.5vh;
-    padding-bottom: vh;
 }
 
-.p3heading h6 d,
-.swiper-slide h4 d {
+.project1 h6 d,
+.project1 h4 d ,.p3heading h6 d{
     color: #29A587;
 }
-
-.swiper {
-    width: 100%;
-    height: 100%;
-}
-
-.swiper-slide {
+.scrollauto{
     display: flex;
-    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+    
+}
+.proshow{
+    width: 100%;
+    display: flex;gap: 6vh;
     align-items: center;
-    justify-content: center;
-    position: relative;
-    padding: 10vh;
+    flex-shrink: 0;
+    justify-content: space-between;
+    animation-name: anime;
+    animation-timing-function: linear;
+    animation-duration: 22s;
+    animation-iteration-count: infinite;
+   
 }
-
-.swiper-slide h4 {
-    font-size: 3vh;
-    padding: 3vh 0vh;
+.scrollauto::-webkit-scrollbar{
+    display: none;
 }
-
-.swiper-slide p {
-    font-size: 2vh;
-    padding: 2vh 0vh;
-}
-
-.swiper-slide button {
-    font-size: 2vh;
-    border-radius: 3vh;
-    padding: 1vh 1vh;
-    text-align: center;
+.project1{
+    display: inline-block;
+    flex-direction: column;
+    width: 70vh;
+    height: 80vh;
+    /* background-color: red; */
 }
 
 .portimg {
-    padding: 4vh;
+    padding: 3vh 1.5vh;
     height: 35vh;
     width: 70vh;
     overflow: hidden;
@@ -283,6 +283,25 @@ body {
     scale: 1.1;
     overflow: hidden;
 }
+
+.project1 h4 {
+    font-size: 3vh;
+    padding: 3vh 0vh;
+}
+
+.project1 p {
+    font-size: 2vh;
+    padding: 2vh 0vh;
+}
+@keyframes anime{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(calc(-100%));
+    }
+}
+
 
 #page4 {
     height: 100vh;
@@ -401,7 +420,9 @@ body {
     padding-bottom: 7vh;
     color: rgba(255, 255, 255, 0.758);
 }
-
+.card h3 d,h4 d{
+    color:#26b792;
+}
 
 
 
@@ -430,6 +451,7 @@ body {
 .contact {
     display: flex;
     align-items: center;
+    margin-left: 25vh;
     justify-content: space-between;
 }
 
@@ -603,7 +625,7 @@ button:hover {
     }
 
     #page1 {
-        height: 170vh;
+        height: 150vh;
         width: 100%;
         background-color: #222831;
         padding: 7vh;
@@ -691,9 +713,8 @@ button:hover {
     .page1rightimage {
         display: flex;
         align-items: center;
-        height: 30vh;
-        width: 30vh;
-        background-image: url("https://images.unsplash.com/photo-1508341591423-4347099e1f19?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        height: 25vh;
+        width: 25vh;
         border-radius: 50%;
         background-position: center;
         background-size: cover;
@@ -751,38 +772,9 @@ button:hover {
         background-color: #222831;
         color: white;
     }
-
-    .swiper {
-        width: 100%;
-        height: 100%;
+    .proshow{
+        animation: none;
     }
-
-    .swiper-slide {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        padding: 1vh;
-    }
-
-    .swiper-slide h4 {
-        font-size: 3vh;
-        padding: 1vh 1vh;
-    }
-
-    .swiper-slide p {
-        font-size: 2vh;
-        padding: 7vh 0vh;
-    }
-
-    .swiper-slide button {
-        font-size: 2vh;
-        border-radius: 3vh;
-        padding: 1vh 1.2vh;
-        text-align: center;
-    }
-
     .portimg {
         height: 35vh;
         width: 35vh;
@@ -935,19 +927,21 @@ button:hover {
 
     #page6 {
         height: 100vh;
-        width: 51.5vh;
+        width: 52vh;
         background-color: #222831;
         color: white;
         padding: none;
         margin: none;
+       
     }
-
+    #page6 .p3heading h2{
+        margin-left: -5vh;
+    }
     .contact {
-        display: flex;
+        display: inline-block;
         gap: 5vh;
-        align-items: center;
-        justify-content: center;
-
+        text-align: left;
+        align-items: flex-start;       
     }
 
     .contactlogo {
@@ -960,6 +954,8 @@ button:hover {
 
     .contactr {
         width: 50vh;
+        margin-left: -26vh;
+      
     }
 
     label {
@@ -973,7 +969,7 @@ button:hover {
     input[type="email"],
     textarea {
         /* width: calc(50% - 10px); */
-        width: 40vh;
+        width: 35vh;
         padding: 10px;
         margin-right: 10px;
         border: 1px solid #ccc;
