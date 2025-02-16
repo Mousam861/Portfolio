@@ -210,7 +210,7 @@ body {
     width: 100%;
     background-color: #222831;
     color: white;
-    padding: 1.5vh;
+    padding: 1.5vh 0vh;
 }
 
 .p3heading {
@@ -269,9 +269,8 @@ body {
     justify-content: space-between;
     animation-name: anime;
     animation-timing-function: linear;
-    animation-duration: 22s;
+    animation-duration: 18s;
     animation-iteration-count: infinite;
-   
 }
 .scrollauto::-webkit-scrollbar{
     display: none;
