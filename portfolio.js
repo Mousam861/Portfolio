@@ -41,35 +41,7 @@ Shery.hoverWithMediaCircle(".hvr2",{
   images:["Images/mern.jpg","Images/ui.jpg","Images/python.jpg"]
 });
 
-// function swiper(){
-//   var swiper = new Swiper(".mySwiper", {
-//     slidesPerView: 1,
-//     centeredSlides: false,
-//     slidesPerGroupSkip: 1,
-//     grabCursor: true,
-//     keyboard: {
-//       enabled: true,
-//     },
-//     breakpoints: {
-//       769: {
-//         slidesPerView: 2,
-//         slidesPerGroup: 2,
-//       },
-//     },
-//     scrollbar: {
-//       el: ".swiper-scrollbar",
-//     },
-//     navigation: {
-//       nextEl: ".swiper-button-next",
-//       prevEl: ".swiper-button-prev",
-//     },
-//     pagination: {
-//       el: ".swiper-pagination",
-//       clickable: true,
-//     },
-//   });
-// }
-// swiper()
+
 
 function loader() {
   var tl = gsap.timeline()
@@ -109,3 +81,29 @@ tl.from(nam,{
   duration:0.2,
   opacity:0,
 })
+
+var swiper = new Swiper(".mySwiper", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+  },
+});
