@@ -210,7 +210,11 @@ body {
     width: 100%;
     background-color: #222831;
     color: white;
+<<<<<<< HEAD
     padding: 7vh;
+=======
+    padding: 1.5vh 0vh;
+>>>>>>> 55e5cf665a444c661a13864be5deef8106b204b3
 }
 .p3heading {
     display: flex;
@@ -237,6 +241,7 @@ body {
 
 .swiper {
     width: 100%;
+<<<<<<< HEAD
     padding-top: 50px;
     padding-bottom: 50px;
   }
@@ -260,6 +265,20 @@ body {
     padding-bottom: 2vh;
   }
   
+=======
+    display: flex;gap: 6vh;
+    align-items: center;
+    flex-shrink: 0;
+    justify-content: space-between;
+    animation-name: anime;
+    animation-timing-function: linear;
+    animation-duration: 18s;
+    animation-iteration-count: infinite;
+}
+.scrollauto::-webkit-scrollbar{
+    display: none;
+}
+>>>>>>> 55e5cf665a444c661a13864be5deef8106b204b3
 .project1{
     display: inline-block;
     flex-direction: column;
