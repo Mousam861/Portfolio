@@ -82,6 +82,7 @@ tl.from(nam,{
   opacity:0,
 })
 
+// Set up Swiper navigation buttons for left and right side
 var swiper = new Swiper(".mySwiper", {
   effect: "coverflow",
   grabCursor: true,
@@ -98,6 +99,7 @@ var swiper = new Swiper(".mySwiper", {
     el: ".swiper-pagination",
     clickable: true,
   },
+  // Place navigation buttons on left and right side
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",

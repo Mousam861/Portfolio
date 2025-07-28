@@ -28,7 +28,10 @@ body {
     justify-content: center;
     gap: 10px;
 }
-
+.icon{
+    display: flex;
+    align-items: center;
+}
 .loader h3 {
     color: white;
     font-size: 2vw;
@@ -97,7 +100,7 @@ body {
 }
 
 .page1left h3 d,
-.page1left h1 d,.page1left h4 d {
+.page1left h1 d,.page1left h4 d,.icon span {
     color: #29A587;
 }
 
@@ -141,7 +144,7 @@ body {
 }
 
 #page2 {
-    height: 100vh;
+    height: 70vh;
     width: 100%;
     background-color: #222831;
     padding: 7vh;
@@ -153,6 +156,7 @@ body {
     align-items: center;
     justify-content: center;
     color: white;
+    padding-bottom: 7vh;
 }
 
 .heading h2 {
@@ -169,52 +173,21 @@ body {
     color: #29A587;
 }
 
-.block {
-    display: flex;
-    gap: 8vh;
-}
-
-.block1 {
-    height: 40vh;
-    width: 62vh;
-    display: flex;
-    flex-direction: column;
-    color: white;
-}
-
-.language {
+#skills{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 1vh;
-    color: white;
+    justify-content: center;
 }
-
-.language h4 {
-    font-size: 2.5vh;
-}
-
-.language h4 d {
-    color: #29A587;
-}
-
-.block1 p {
-    font-size: 2.3vh;
-    padding-top: 2vh;
-    color: rgba(255, 255, 255, 0.822);
-}
-
 
 #page3{
     height: 100vh;
     width: 100%;
     background-color: #222831;
     color: white;
-<<<<<<< HEAD
     padding: 7vh;
-=======
-    padding: 1.5vh 0vh;
->>>>>>> 55e5cf665a444c661a13864be5deef8106b204b3
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .p3heading {
     display: flex;
@@ -241,7 +214,6 @@ body {
 
 .swiper {
     width: 100%;
-<<<<<<< HEAD
     padding-top: 50px;
     padding-bottom: 50px;
   }
@@ -265,20 +237,6 @@ body {
     padding-bottom: 2vh;
   }
   
-=======
-    display: flex;gap: 6vh;
-    align-items: center;
-    flex-shrink: 0;
-    justify-content: space-between;
-    animation-name: anime;
-    animation-timing-function: linear;
-    animation-duration: 18s;
-    animation-iteration-count: infinite;
-}
-.scrollauto::-webkit-scrollbar{
-    display: none;
-}
->>>>>>> 55e5cf665a444c661a13864be5deef8106b204b3
 .project1{
     display: inline-block;
     flex-direction: column;
@@ -747,31 +705,8 @@ button:hover {
         padding: 2vh;
     }
 
-    .block {
-        display: flex;
-        flex-direction: column;
-    }
 
-    .block1 {
-        height: 23vh;
-        width: 40vh;
-        display: flex;
-        flex-direction: column;
-        color: white;
-    }
-
-    .language {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 1vh;
-        color: white;
-    }
-
-    .block1 p {
-        font-size: 2.3vh;
-        color: rgba(255, 255, 255, 0.822);
-    }
+    
 
 
 
